@@ -1,0 +1,83 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background: #222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+  background: #ff6600;
+  color: white;
+}
+
+nav ul li a.active {
+  background: #ff6600;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#home { background: linear-gradient(to right, #ff6600, #ff3300); color: white; }
+#about {
+  background: pink;  
+}
+#services {
+  background: #3498db;   
+  color: white;         
+}
+
+#contact {
+  background: #2ecc71;   
+  color: white;          
+}
